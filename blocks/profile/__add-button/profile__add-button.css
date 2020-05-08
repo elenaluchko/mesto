@@ -1,0 +1,22 @@
+.profile__add-button {
+    display: flex;
+    height: 50px;
+    width: 46%;
+    border: 2px solid #FFFFFF;
+    justify-self: end;
+    background-color: black;
+    justify-content: center;
+}
+
+@media (max-width: 1023px) {
+    .profile__add-button {
+        width: 70%;
+        margin-top: 2rem;
+    }
+}
+
+@media (max-width: 425px) {
+    .profile__add-button {
+        width: 88.125%;
+    }
+}

@@ -1,0 +1,12 @@
+@import url(../vendor/normalize.css);
+@import url(../blocks/page.css);
+
+body {
+    background-color: #000000;
+}
+
+/* Рабочая разметка блоков  */
+
+/* div {
+    border: red 1px solid;
+} */
