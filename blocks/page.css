@@ -3,7 +3,9 @@
 @import url(./elements/elements.css);
 @import url(./element/element.css);
 @import url(./footer/footer.css);
-@import url(./popup/__container/);
+@import url(./popup/popup.css);
+@import url(./popup/_opened/popup_opened.css);
+@import url(./form/form.css);
 @import url(../fonts/fonts.css);
 
 .page {

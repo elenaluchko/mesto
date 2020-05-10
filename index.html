@@ -52,14 +52,36 @@
         <section class="profile">
             <img src="./images/avatar.jpg" class="profile__avatar" alt="Фотография Жак-Ива Кусто">
             <div class="profile__info">
-                <h1 class="profile__title">Жак-Ив Кусто</h1>
-                <button class="profile__edit-button"><img src="./images/pen.png" class="profile__edit-pic"></button>
-                <p class="profile__description">Исследователь океана</p>
+                <h1 class="profile__name">Жак-Ив Кусто</h1>
+                <!-- <button class="profile__edit-button"><img src="./images/pen.png" class="profile__edit-pic"></button> -->
+                <button class="profile__edit-button"></button>
+                <p class="profile__about">Исследователь океана</p>
             </div>
 
 
-            <button class="profile__add-button"><img src="./images/plus.png" class="profile__add-pic"></button>
+            <!-- <button class="profile__add-button"><img src="./images/plus.png" class="profile__add-pic"></button> -->
+            <button class="profile__add-button"></button>
+            <!-- <button class="profile__add-button"><p class="profile__add-pic">+</p></button> -->
         </section>
+
+        <div class="popup">
+            <div class="popup__container">
+                <form class="form">
+                    <h3 class="popup__title">Редактировать профиль</h3>
+                    <fieldset class="form__field form__field_type_name">
+                        <label for="name"></label>
+                        <input type="text" id="name" name="name">
+                    </fieldset>
+                    <fieldset class="form__field form__field_type_about">
+                        <label for="about"></label>
+                        <input type="text" id="about" name="about">
+                    </fieldset>
+                    <button class="form__button" type="submit">Сохранить</button>
+                    <img class="popup__close">
+                </form>
+            </div>
+        </div>
+
         <section class="elements">
             <div class="element">
                 <img class="element__pic" src="./images/elbrus.png">
@@ -108,6 +130,7 @@
     <footer class="footer">
         <p class="footer__text">© 2020 Mesto Russia</p>
     </footer>
+    <script src="popup.js"></script>
 </body>
 
 </html>

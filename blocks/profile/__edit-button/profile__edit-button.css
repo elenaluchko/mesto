@@ -5,4 +5,11 @@
     height: 24px;
     border: 1px solid #FFFFFF;
     background-color: black;
+    background-image: url(../../../images/pen.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.profile__edit-button:hover {
+    border: 1px solid rgba(255, 255, 255, 0.6);
 }
