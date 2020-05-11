@@ -1,6 +1,11 @@
 @import url(./__text/footer__text.css);
-
 .footer {
     width: 73.5%;
     margin: 0 auto;
+}
+
+@media (max-width: 425px) {
+    .footer {
+        width: 88.125%;
+    }
 }
