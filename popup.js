@@ -1,47 +1,42 @@
-/* Создаем функции для открытия и закрытия поп-апа. Добавляем/убираем модификатор popup_opened */
+const Popup = document.querySelector('.popup'); // Выбираем селектор для поп-апа
+const EditButton = document.querySelector('.profile__edit-button'); // Выбираем селектор кнопки редактирования
+const CloseButton = document.querySelector('.popup__close'); // и закрытия поп-апа
+const formElement = document.querySelector('.form'); // Блок с формой
+const SubmitButton = formElement.querySelector('.form__submit-button'); // Выбираем селектор кнопки сохранения
+let nameInput = formElement.querySelector('#name');
+let jobInput = formElement.querySelector('#about');
+let Profile = document.querySelector('.profile'); // Находим блок .profile
+let ProfileName = Profile.querySelector('.profile__name'); // Выбираем элемент __name
+let ProfileAbout = Profile.querySelector('.profile__about'); // Выбираем элемент __about
 
-let Popup = document.querySelector('.popup');
-function PopupOpen(){
+function openPopup () {
     Popup.classList.add('popup_opened');
-}
-
-function PopupClose(){
+    if (Popup.classList.contains('popup_opened')) {
+      nameInput.value = ProfileName.textContent;
+      jobInput.value = ProfileAbout.textContent;
+    }
+  };
+  
+  function closePopup () {
     Popup.classList.remove('popup_opened');
+  }
+  
+  nameInput.addEventListener('click', function () { // При клике на поле формы, очищаем значения
+    nameInput.value = '';
+});
+
+jobInput.addEventListener('click', function () { // При клике на поле формы, очищаем значения
+    jobInput.value = '';
+});
+
+function formSubmitHandler(evt) {
+    evt.preventDefault();
+ProfileName.textContent = nameInput.value;
+ProfileAbout.textContent = jobInput.value;    
+closePopup ();
 }
+formElement.addEventListener('submit', formSubmitHandler);
 
-/* Выбираем селектор кнопки редактирования и закрытия поп-апа. Задаем фунции открытия и закрытия соответственно */
-let EditButton = document.querySelector('.profile__edit-button');
-console.log(EditButton);
-EditButton.addEventListener('click', PopupOpen);
-
-let CloseButton = document.querySelector('.popup__close');
-CloseButton.addEventListener('click', PopupClose);
-
-/* Находим блок .profile. Выбираем в нем элементы __name и __about  */
-let Profile = document.querySelector('.profile');
-let ProfileName = Profile.querySelector('.profile__name');
-ProfileName = ProfileName.textContent;
-/* Выводим в консоль, чтобы проверить корректность */
-console.log(ProfileName); 
-let ProfileAbout = Profile.querySelector('.profile__about');
-ProfileAbout = ProfileAbout.textContent;
-/* Выводим в консоль, чтобы проверить корректность */
-console.log(ProfileAbout); 
-
-/* Находим поля формы для ввода имени и описания. Присваиваем им значения из блока .profile  */
-let Form = document.querySelector('.form');
-/* let FormFieldName = Form.querySelector('.form__field_type_name'); */
-/* FormFieldName.textContent = ProfileName; */
-let FormFieldName = Form.querySelector('#name');
-FormFieldName.value = ProfileName;
-let FormFieldAbout = Form.querySelector('#about');
-FormFieldAbout.value = ProfileAbout;
-
-
-FormFieldName.addEventListener('click', function () {
-    FormFieldName.value = '';
-});
-
-FormFieldAbout.addEventListener('click', function () {
-    FormFieldAbout.value = '';
-});
+EditButton.addEventListener('click', openPopup);
+SubmitButton.addEventListener('click', formSubmitHandler);
+CloseButton.addEventListener('click', closePopup);

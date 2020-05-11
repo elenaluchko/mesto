@@ -1,5 +1,5 @@
 @import url(./__field/form__field.css);
-@import url(./__button/form__button.css);
+@import url(./__submit-button/form__submit-button.css);
 .form {
     margin: 0 auto;
     width: 83.5%;

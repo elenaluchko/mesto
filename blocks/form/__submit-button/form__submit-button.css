@@ -1,4 +1,4 @@
-.form__button {
+.form__submit-button {
     background: #000000;
     border-radius: 2px;
     border: none;
@@ -12,6 +12,6 @@
     height: 2.7777em;
 }
 
-.form__button:hover {
+.form__submit-button:hover {
     background: rgba(0, 0, 0, 0.8);
 }
