@@ -4,14 +4,14 @@
 @import url(./__about/profile__about.css);
 @import url(./__edit-button/profile__edit-button.css);
 @import url(./__name/profile__name.css);
+@import url(./__title/profile__title.css);
 
 .profile {
     margin: 0 auto;
     padding-top: 40px;
     display: grid;
     width: 73.5%;
-    grid-template-rows: 120px;
-    grid-template-columns: 146.25px 1fr 1fr;
+    grid-template-columns: repeat(2, max-content) 1fr;
     align-items: center;
 }
 

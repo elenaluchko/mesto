@@ -8,3 +8,9 @@
     grid-row-gap: 21px;
     justify-content: center;
 }
+
+@media (min-width: 300px) and (max-width: 768px) {
+    .elements {
+        width: 89%;
+    }
+}

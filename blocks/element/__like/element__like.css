@@ -3,3 +3,6 @@
     width: 20.76px;
     height: 18.13px;
 }
+.element__like:hover {
+    opacity: 0.6;
+}

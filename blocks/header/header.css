@@ -1,10 +1,18 @@
 @import url(./__logo/header__logo.css);
-
 .header {
     margin: 0 auto;
-    padding-top: 2.8125rem;
+    padding-top: 2.8125em;
     display: grid;
     width: 73.5%;
-    grid-template-rows: 4.625rem;
+    grid-template-rows: 4.5em;
     border-bottom: 1px solid rgb(84,84,84,.7);
+}
+
+@media (max-width: 445px) {
+    .header {
+        width: 100%;
+        padding-top: 1.8em;
+        padding-left: 6%;
+        grid-template-rows: 3.5em;
+    }
 }

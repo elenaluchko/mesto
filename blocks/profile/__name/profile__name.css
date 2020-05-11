@@ -4,9 +4,10 @@
     line-height: 1.33;
     color: #FFFFFF;
     margin: 0;
+    margin-right: 0.3em;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 454px) {
     .profile__name {
         font-style: normal;
         font-size: 27px;
