@@ -14,4 +14,4 @@
 Документ создан по принципам организации БЭМ.
 
 **Git Hub Pages** 
-https://elenaluchko.github.io/russian-travel/index.html
+https://elenaluchko.github.io/mesto/index.html 
