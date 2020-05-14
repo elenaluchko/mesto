@@ -1,9 +1,19 @@
-@import url(./__field/form__field.css);
 @import url(./__submit-button/form__submit-button.css);
+@import url(./__about/form__about.css);
+@import url(./__name/form__name.css);
 .form {
     margin: 0 auto;
     width: 83.5%;
     display: grid;
     grid-row-gap: 48px;
 
+}
+
+.form fieldset {
+    padding: 0; 
+    margin: 0;
+    border: none;
+    font: inherit;
+    color: inherit;
+    background-color: transparent;
 }

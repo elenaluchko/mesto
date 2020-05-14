@@ -11,7 +11,7 @@
     padding-top: 40px;
     display: grid;
     width: 73.5%;
-    grid-template-columns: repeat(2, max-content) 1fr;
+    grid-template-columns: max-content 1fr 150px;
     align-items: center;
 }
 

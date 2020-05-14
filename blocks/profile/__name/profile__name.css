@@ -5,6 +5,10 @@
     color: #FFFFFF;
     margin: 0;
     margin-right: 0.3em;
+    text-overflow: ellipsis; 
+    max-width: 80%; 
+    overflow: hidden; 
+    white-space: nowrap;
 }
 
 @media (max-width: 454px) {

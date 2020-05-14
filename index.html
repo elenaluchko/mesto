@@ -18,80 +18,74 @@
             <div class="profile__info">
                 <div class="profile__title">
                     <h1 class="profile__name">Жак-Ив Кусто</h1>
-                    <button class="profile__edit-button"></button>
+                    <button class="profile__edit-button" type="button"></button>
                 </div>
                 <p class="profile__about">Исследователь океана</p>
             </div>
-            <button class="profile__add-button"></button>
+            <button class="profile__add-button" type="button"></button>
         </section>
-
-        <div class="popup">
-            <div class="popup__container">
-                <form class="form">
-                    <p class="popup__title">Редактировать профиль</p>
-                    <fieldset class="form__field form__field_type_name">
-                        <label for="name"></label>
-                        <input type="text" id="name" name="name">
-                    </fieldset>
-                    <fieldset class="form__field form__field_type_about">
-                        <label for="about"></label>
-                        <input type="text" id="about" name="about">
-                    </fieldset>
-                    <button class="form__submit-button" type="submit">Сохранить</button>
-                </form>
-                <div class="popup__close"></div>
-            </div>
-        </div>
-
         <section class="elements">
             <div class="element">
                 <img class="element__pic" src="./images/dombai.jpg" alt="Домбай">
                 <div class="element__caption">
-                    <p class="element__title">Домбай</p>
-                    <img class="element__like" src="./images/like.png" alt="like">
+                    <h3 class="element__title">Домбай</h3>
+                    <button class="element__like" type="button"></button>
                 </div>
             </div>
             <div class="element">
                 <img class="element__pic" src="./images/baikal.jpg" alt="Байкал">
                 <div class="element__caption">
-                    <p class="element__title">Байкал</p>
-                    <img class="element__like" src="./images/like.png" alt="like">
+                    <h3 class="element__title">Байкал</h3>
+                    <button class="element__like" type="button"></button>
                 </div>
             </div>
             <div class="element">
                 <img class="element__pic" src="./images/olhon.jpg" alt="Ольхон">
                 <div class="element__caption">
-                    <p class="element__title">Ольхон</p>
-                    <img class="element__like" src="./images/like.png" alt="like">
+                    <h3 class="element__title">Ольхон</h3>
+                    <button class="element__like" type="button"></button>
                 </div>
             </div>
             <div class="element">
                 <img class="element__pic" src="./images/karelia.jpg" alt="Карелия">
                 <div class="element__caption">
-                    <p class="element__title">Карелия</p>
-                    <img class="element__like" src="./images/like.png" alt="like">
+                    <h3 class="element__title">Карелия</h3>
+                    <button class="element__like" type="button"></button>
                 </div>
             </div>
             <div class="element">
                 <img class="element__pic" src="./images/altaj.jpg" alt="Алтай">
                 <div class="element__caption">
-                    <p class="element__title">Алтай</p>
-                    <img class="element__like" src="./images/like.png" alt="like">
+                    <h3 class="element__title">Алтай</h3>
+                    <button class="element__like" type="button"></button>
                 </div>
             </div>
             <div class="element">
                 <img class="element__pic" src="./images/karachaevsk.jpg" alt="Карачевск">
                 <div class="element__caption">
-                    <p class="element__title">Карачевск</p>
-                    <img class="element__like" src="./images/like.png" alt="like">
+                    <h3 class="element__title">Карачевск</h3>
+                    <button class="element__like" type="button"></button>
                 </div>
             </div>
         </section>
+        <div class="popup">
+            <div class="popup__container">
+                <form class="form" name="popup-form" method = "post" action="#">
+                    <p class="popup__title">Редактировать профиль</p>
+                    <fieldset>
+                        <input class="form__name" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                        <input class="form__about" type="text" id="about" name="about" placeholder="Коротко о себе" required>
+                    </fieldset>
+                    <button class="form__submit-button" type="submit">Сохранить</button>
+                </form>
+                <button class="popup__close" type="button"></button>
+            </div>
+        </div>
     </main>
     <footer class="footer">
         <p class="footer__text">&copy; 2020 Mesto Russia</p>
-    </footer>
-    <script src="popup.js"></script>
+    </footer> 
+    <script src="./scripts/popup.js"></script>
 </body>
 
 </html>

@@ -1,12 +1,14 @@
 @import url(../vendor/normalize.css);
-@import url(../blocks/page.css);
+@import url(../blocks/page/page.css);
+@import url(../header/header.css);
+@import url(../profile/profile.css);
+@import url(../elements/elements.css);
+@import url(../element/element.css);
+@import url(../footer/footer.css);
+@import url(../popup/popup.css);
+@import url(../popup/_opened/popup_opened.css);
+@import url(../form/form.css);
 
 body {
     background-color: #000000;
 }
-
-/* Рабочая разметка блоков  */
-
-/* div {
-    border: red 1px solid;
-} */
