@@ -1,13 +1,13 @@
 @import url(../vendor/normalize.css);
 @import url(../blocks/page/page.css);
-@import url(../header/header.css);
-@import url(../profile/profile.css);
-@import url(../elements/elements.css);
-@import url(../element/element.css);
-@import url(../footer/footer.css);
-@import url(../popup/popup.css);
-@import url(../popup/_opened/popup_opened.css);
-@import url(../form/form.css);
+@import url(../blocks/header/header.css);
+@import url(../blocks/profile/profile.css);
+@import url(../blocks/elements/elements.css);
+@import url(../blocks/element/element.css);
+@import url(../blocks/footer/footer.css);
+@import url(../blocks/popup/popup.css);
+@import url(../blocks/popup/_opened/popup_opened.css);
+@import url(../blocks/form/form.css);
 
 body {
     background-color: #000000;
