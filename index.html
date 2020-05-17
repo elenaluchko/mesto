@@ -18,11 +18,11 @@
             <div class="profile__info">
                 <div class="profile__title">
                     <h1 class="profile__name">Жак-Ив Кусто</h1>
-                    <button class="profile__edit-button" type="button"></button>
+                    <button class="profile__edit-button" type="button" aria-label="edit"></button>
                 </div>
                 <p class="profile__about">Исследователь океана</p>
             </div>
-            <button class="profile__add-button" type="button"></button>
+            <button class="profile__add-button" type="button" aria-label="add"></button>
         </section>
         <section class="elements">
             <div class="element">
@@ -72,13 +72,13 @@
             <div class="popup__container">
                 <form class="form" name="popup-form" method = "post" action="#">
                     <p class="popup__title">Редактировать профиль</p>
-                    <fieldset>
-                        <input class="form__name" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-                        <input class="form__about" type="text" id="about" name="about" placeholder="Коротко о себе" required>
+                    <fieldset class="form__fields">
+                        <input class="form__input form__input_type_name" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
+                        <input class="form__input form__input_type_about" type="text" id="about" name="about" placeholder="Коротко о себе" required>
                     </fieldset>
                     <button class="form__submit-button" type="submit">Сохранить</button>
                 </form>
-                <button class="popup__close" type="button"></button>
+                <button class="popup__close" type="button" aria-label="close"></button>
             </div>
         </div>
     </main>
