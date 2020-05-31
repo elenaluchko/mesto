@@ -1,7 +1,9 @@
 @import url(./__container/popup__container.css);
 @import url(./__title/popup__title.css);
 @import url(./__close/popup__close.css);
-
+@import url(./__canvas/popup__canvas.css);
+@import url(./__caption/popup__caption.css);
+@import url(./__content/popup__content.css);
 .popup {
     z-index: 1;
     position: fixed;
@@ -9,6 +11,8 @@
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0,0,0,.5);
-    display: none;
+    background: rgba(0, 0, 0, .5);
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.5s linear, visibility 0.5s linear;
 }

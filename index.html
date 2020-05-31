@@ -25,66 +25,65 @@
             <button class="profile__add-button" type="button" aria-label="добавить"></button>
         </section>
         <section class="elements">
-            <div class="element">
-                <img class="element__pic" src="./images/dombai.jpg" alt="Домбай">
-                <div class="element__caption">
-                    <h3 class="element__title">Домбай</h3>
-                    <button class="element__like" type="button"></button>
+            <template id="element">
+                <div class="element">
+                    <img class="element__pic">
+                    <div class="element__caption">
+                        <h3 class="element__title"></h3>
+                        <button class="element__like" type="button"></button>
+                    </div>
+                    <button class="element__trash" type="button" aria-label="удалить"></button>>
                 </div>
-            </div>
-            <div class="element">
-                <img class="element__pic" src="./images/baikal.jpg" alt="Байкал">
-                <div class="element__caption">
-                    <h3 class="element__title">Байкал</h3>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__pic" src="./images/olhon.jpg" alt="Ольхон">
-                <div class="element__caption">
-                    <h3 class="element__title">Ольхон</h3>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__pic" src="./images/karelia.jpg" alt="Карелия">
-                <div class="element__caption">
-                    <h3 class="element__title">Карелия</h3>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__pic" src="./images/altaj.jpg" alt="Алтай">
-                <div class="element__caption">
-                    <h3 class="element__title">Алтай</h3>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
-            <div class="element">
-                <img class="element__pic" src="./images/karachaevsk.jpg" alt="Карачевск">
-                <div class="element__caption">
-                    <h3 class="element__title">Карачевск</h3>
-                    <button class="element__like" type="button"></button>
-                </div>
-            </div>
+            </template>
         </section>
         <div class="popup">
             <div class="popup__container">
-                <form class="form" name="popup-form" method = "post" action="#">
+                <form class="form" name="popup-form" method="post" action="#">
                     <p class="popup__title">Редактировать профиль</p>
                     <fieldset class="form__fields">
-                        <input class="form__input form__input_type_name" type="text" id="name" name="name" placeholder="Введите ваше имя" required>
-                        <input class="form__input form__input_type_about" type="text" id="about" name="about" placeholder="Коротко о себе" required>
+                        <input class="form__input form__input_type_name" type="text" id="name" name="name"
+                            placeholder="Введите ваше имя" required>
+                        <input class="form__input form__input_type_about" type="text" id="about" name="about"
+                            placeholder="Коротко о себе" required>
                     </fieldset>
                     <button class="form__submit-button" type="submit">Сохранить</button>
                 </form>
                 <button class="popup__close" type="button" aria-label="закрыть"></button>
             </div>
         </div>
+        <div class="popup popup_type_pic">
+            <div class="popup__container">
+                <form class="form" name="popup-form" method="post" action="#">
+                    <p class="popup__title">Новое место</p>
+                    <fieldset class="form__fields">
+                        <input class="form__input form__input_type_place" type="text" id="place" name="place"
+                            placeholder="Название" required>
+                        <input class="form__input form__input_type_url" type="url" id="url" name="url"
+                            placeholder="Ссылка на картинку" required>
+                    </fieldset>
+                    <button class="form__submit-button" type="submit">Создать</button>
+                </form>
+                <button class="popup__close" type="button" aria-label="закрыть"></button>
+            </div>
+        </div>
+        <div class="popup popup_type_canvas">
+
+            <div class="popup__container_type_canvas">
+
+                <figure class="popup__content">
+                    <button class="popup__close popup__close_type_canvas" type="button" aria-label="закрыть"></button>
+                    <img class="popup__canvas" src="#" alt="Увеличенная фотография">
+                    <figcaption class="popup__caption">Тестовая подпись</figcaption>
+                </figure>
+
+            </div>
+            
+
+        </div>
     </main>
     <footer class="footer">
         <p class="footer__text">&copy; 2020 Mesto Russia</p>
-    </footer> 
+    </footer>
     <script src="./scripts/popup.js"></script>
 </body>
 
